@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Array & Object Operations</title>
 </head>
 <body>
-    
+
+<h2>Check Console for Output</h2>
+
+<script>
+
+
+
+let numbers = [1, 2, 3, 4];
+
+console.log("Original Array:", numbers);
+
+numbers.push(5);
+console.log("After push:", numbers);
+
+
+numbers.pop();
+console.log("After pop:", numbers);
+
+
+numbers.unshift(0);
+console.log("After unshift:", numbers);
+
+
+numbers.shift();
+console.log("After shift:", numbers);
+
+console.log("Array Elements:");
+numbers.forEach(function(num) {
+  console.log(num);
+});
+
+
+
+
+let person = {
+  name: "Priyanshu",
+  age: 19,
+  course: "B.Tech"
+};
+
+console.log("Original Object:", person);
+
+
+console.log("Name:", person.name);
+
+
+person.city = "Delhi";
+console.log("After adding city:", person);
+
+person.age = 20;
+console.log("After updating age:", person);
+
+delete person.course;
+console.log("After deleting course:", person);
+
+console.log("Object Properties:");
+for (let key in person) {
+  console.log(key + " : " + person[key]);
+}
+
+</script>
+
 </body>
 </html>
