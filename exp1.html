@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Page</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    header {
+      background: #0d6efd;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    footer {
+      background: #343a40;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="fruit">Apple</div>
-<div class="fruit">Mango</div>
-<div class="fruit">Orange</div>
+
+<!-- HEADER -->
+<header>
+  <h1>My Responsive Website</h1>
+  <p>Using Bootstrap Grid System</p>
+</header>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">MySite</a>
+  </div>
+</nav>
+
+<!-- CONTENT -->
+<div class="container mt-4">
+  <div class="row">
+
+    <!-- Column 1 -->
+    <div class="col-12 col-md-6">
+      <div class="p-3 border bg-light">
+        <h3>About Us</h3>
+        <p>This is a responsive column using Bootstrap grid.</p>
+      </div>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="col-12 col-md-6">
+      <div class="p-3 border bg-light">
+        <h3>Services</h3>
+        <p>Web Design, Development, Optimization.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="mt-4">
+  <p>© 2025 MySite</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
